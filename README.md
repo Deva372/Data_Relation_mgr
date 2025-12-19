@@ -1,2 +1,5 @@
-# Data_Relation_mgr
-his app is essentially a "no-code" data architect designed to solve one of the most annoying problems in data analysis: trying to combine information from multiple scattered files without having to write complex VLOOKUPs or SQL queries.
+This app is essentially a "no-code" data architect designed to solve one of the most annoying problems in data analysis: trying to combine information from multiple scattered files without having to write complex VLOOKUPs or SQL queries.
+
+I built this with a focus on speed and accuracy. It allows you to upload any mix of Excel or CSV files, automatically cleans up messy column names (like those hidden spaces that usually break everything), and lets you visually "link" tables together. For example, if you have a massive sales list with just Product IDs and a separate master file with Product Names and Prices, you can simply drag those columns together, and the app builds the master table for you.
+
+Because dealing with millions of rows can crash a standard browser, I've optimized the backend to handle large datasets—specifically up to 8 lakh rows—by using smart caching and memory-efficient merging. It also includes a "deduplication" feature to ensure that if you're matching data, it doesn't accidentally explode your row count by creating billions of redundant entries. Once you're done, you get a clean preview and can instantly export the results back to Excel or CSV. It's built to be fast, stable, and most importantly, simple enough for anyone to use.
